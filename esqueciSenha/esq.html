@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esqueci minha senhha</title>
+    <link rel="stylesheet" href="esq.css">
+</head>
+<body>
+    <div id="pagina">
+        <nav></nav>
+        <header></header>
+        <main>            
+               <form action="esq.php" method="POST">
+                    <fieldset>
+                        <legend>Esqueci minha senha</legend>
+                        
+                        <label for="email">Email:*</label>
+                        <input type="email" name="email" id="email" class="dados" placeholder="exemplo@gmail.com" required>
+
+                        <label for="datanascimento">Data de Nascimento:*</label>
+                        <input type="date" name="datanascimento" id="datanascimento" class="dados" required>
+
+                    </fieldset>
+
+                    <div id="buttons">                        
+                        <div>
+                            <button type="submit" id="submit">Enviar</button><br>
+                        </div>
+                        <div>
+                            <a href="../index.html" id="voltar"><img src="../imagem/voltar.png" alt="" id="imgVoltar">Voltar</a> 
+                        </div>
+                    </div>  
+
+                </form>
+           
+        </main>
+        <footer>
+            <h5>Todos os direitos reservados ao Dev@</h5>
+        </footer>
+
+    </div>
+    
+</body>
+</html>

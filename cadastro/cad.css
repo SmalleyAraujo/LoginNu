@@ -1,0 +1,411 @@
+/* @keyframes Animação */
+
+@font-face {
+    font-family:josefin;
+    src: url(../fontes/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family:sachila;
+    src: url(../fontes/sachila_residance/Sachila\ Residance.ttf);
+}
+
+/* @keyframes Animação */
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+#pagina{
+    width: 90%;
+    height: auto;
+    margin: 0px auto;
+    background-color: rgb(170, 168, 168);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* INICIO NAV */
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;    
+}
+#linkNav{
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content:space-around;
+    gap: 12%;
+    padding-top: 1%;
+    padding-left: 2%;    
+}
+
+.link{
+    text-decoration: none;
+    font-size: 12pt;
+    color: white;   
+}
+
+#linkNav2{
+    width: 40%;
+    height: auto;
+    padding-right: 2%;
+    padding-top: 2%;
+    display: flex;
+    justify-content:end;    
+}
+.imagemLink{
+    width: 30px;
+    height: auto;
+    background-color: white;    
+}
+.linklogin{
+    color: white;
+    text-decoration: none;
+    font-size: 12pt;
+    padding-top: 50%;    
+}
+/* FIM DO NAV */
+/*  */
+/*  */
+/* INICIO DO HEADER */
+header{
+    width: 100%;
+    height: 350px;
+    background: rgb(202,22,206);
+    background: radial-gradient(circle, rgba(202,22,206,1) 0%, rgba(145,40,211,1) 100%);    
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header h2{
+    font-family: sachila;
+    font-size: 25pt;
+}
+
+.textHeader{
+    width: 50%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;   
+    padding-top: 2%;
+    line-height: 35px;
+}
+.textHeader h2{
+    text-align: center; 
+    padding-bottom: 10px;  
+}
+
+.textHeader p{
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.imagheader{
+    width: 50%;
+    height: 350px;
+    background-image: url(../imagem/escritorio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+/* FIM DO HEADER */
+
+main{
+    width: 100%;
+    height: auto;
+    margin: 0px 1%;
+    font-size: 12pt;
+    font-weight: bold;
+    line-height: 25px;
+    padding-top: 2%;
+}
+/*  */
+/* INICIO FORM */
+form{
+    width: 95%;
+    height: auto;    
+}
+/* FIM FORM */
+/*  */
+/* INICIO Ajuste de fontes */
+legend{
+    font-family: sachila;    
+}
+
+h1{
+    font-family: josefin;
+    font-size: 25pt;        
+}
+
+/* FIM Ajuste de fontes */
+
+/*  */
+/* INICIO TABELA DADOS */
+#dados{
+    width: 100%;
+    height: auto;   
+    border: none;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+#dados:hover{
+    width: 90%;
+    border: 5px solid greenyellow;
+    border-radius: 5px;
+    padding-left: 50px;     
+}
+
+.dadosT{
+    margin-bottom: 20px;
+    font-size: 18pt;     
+}
+
+#nome{
+    width: 25%;
+    height: 1%;    
+}
+
+#sobrenome{
+    width: 25%;
+    height: 1%;    
+}
+
+#cpf{
+    width: 13%;
+    height: 1%;    
+}
+
+#datanascimento{
+    width: 10%;
+    height: 1%;    
+}
+
+#telefone{
+    width: 10%;
+    height: 1%;   
+}
+
+.dados:focus{
+    width: auto;
+    height: 30px;
+    font-size: 14pt;
+    box-shadow: 5px 5px 5px rgb(239, 240, 239);
+    padding: 10px;    
+}
+
+/* FIM TABELA DADOS */
+/*  */
+/* INICIO ENDEREÇO */
+
+
+#endereco{
+    width: 100%;
+    height: auto;  
+    margin-top: 20px; 
+    border: none;
+    text-align: justify;
+    padding-bottom: 20px;
+    line-height: 40px;
+}
+#endereco:hover{
+    width: 90%;
+    border: 5px solid greenyellow;
+    border-radius: 5px;  
+    padding-left: 50px;  
+}
+
+.endT{    
+    margin-bottom: 20px;
+    font-size: 18pt;
+}
+
+#cep{
+    width: 7%;
+    height: 1%; 
+}
+
+#logradouro{
+    width: 30%;
+    height: 1%; 
+}
+
+#bairro{
+    width: 10%;
+    height: 1%; 
+}
+
+#cidade{
+    width: 10%;
+    height: 1%; 
+}
+
+#uf{
+    width: 2%;
+    height: 1%; 
+}
+
+.dadosEnd:focus{
+    width: auto;
+    height: 30px;
+    font-size: 14pt;
+    box-shadow: 5px 5px 5px rgb(239, 240, 239);
+    padding: 10px;    
+}
+
+/* FIM ENDEREÇO */
+/*  */
+/* INICIO OUTROS DADOS */
+
+#outrosDados{
+    width: 100%;
+    height: auto;  
+    margin-top: 20px; 
+    border: none;
+    text-align: justify;
+    padding-bottom: 20px;
+    line-height: 30px;
+}
+
+#outrosDados:hover{
+    width: 90%;
+    border: 5px solid greenyellow;
+    border-radius: 5px;  
+    padding-left: 50px;  
+}
+
+.outrosD{
+    margin-bottom: 20px;
+    font-size: 18pt;
+}
+
+.outrosDselect:focus{
+    width: auto;
+    height: 30px;
+    font-size: 14pt;
+    box-shadow: 5px 5px 5px rgb(239, 240, 239);
+    padding: 10px;    
+}
+
+/* FIM OUTROS DADOS */
+/*  */
+
+/* INICIO DADOS ACESSO */
+
+#dadosAcesso{
+    width: 100%;
+    height: auto;  
+    margin-top: 20px; 
+    border: none;
+    text-align: justify;
+    padding-bottom: 20px;
+    line-height: 30px;
+}
+
+#dadosAcesso:hover{
+    width: 90%;
+    border: 5px solid greenyellow;
+    border-radius: 5px;  
+    padding-left: 50px;  
+}
+
+.dadosA{
+    margin-bottom: 20px;
+    font-size: 18pt;
+}
+
+.inpDadoAcesso:focus{
+    width: auto;
+    height: 30px;
+    font-size: 14pt;
+    box-shadow: 5px 5px 5px rgb(239, 240, 239);
+    padding: 10px;    
+}
+
+#download{
+    text-decoration: none;
+    color: white;
+}
+/* FIM DADOS ACESSO */
+/*  */
+/*  */
+/* INICIO BUTTONS  */
+
+#buttons{
+    width: 95%;
+    height: auto;      
+    margin: 20px auto;    
+    display: flex;
+    justify-content: space-around;   
+}
+
+#buttons1{
+    width: 60%;
+    height: auto;    
+    display: flex;
+    justify-content: space-around; 
+}
+
+.buttons{
+    border: 2px solid rgb(216, 212, 211);
+    border-radius: 5px;
+    background-color: rgb(128, 124, 124);
+    color: white;
+    font-weight:bold;
+    width: 150px;
+    height: 50px;    
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
+    text-decoration: none;
+}
+
+#buttons2{
+    width: 40%;
+    height: auto;    
+    display: flex;
+    justify-content:flex-end; 
+}
+
+.buttons2{
+    border: 2px solid rgb(216, 212, 211);
+    border-radius: 5px;
+    background-color: rgb(128, 124, 124);
+    color: white;
+    font-weight:bold;
+    width: 70px;
+    text-align: center;
+    height: auto;    
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
+    text-decoration: none;
+}
+
+
+#imgVoltar{
+    width: 30px;
+    height: auto;
+    background-color: rgb(236, 119, 9);
+    border-radius: 100%;
+}
+
+/* FIM BUTTONS */
+/*  */
+/* INICIO FOOTER */
+footer{
+    width: 100%;
+    height: 60px;
+    background: black;
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+}
+/* FIM FOOTER */

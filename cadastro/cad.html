@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cad.css">
+   
+</head>
+<body>
+    <div id="pagina">
+        <nav>
+            <div id="linkNav">
+                <div>
+                    <a href="" class="link">HOME</a>
+                </div>
+                <div>
+                    <a href="" class="link">Para Você</a>
+                </div>
+                <div>
+                    <a href="" class="link">Para seu negócio</a>
+                </div>
+                <div>
+                    <a href="" class="link">Nubank</a>
+                </div>
+                <div>
+                    <a href="" class="link">Peguntas</a>
+                </div>
+            
+            </div>                    
+            <div id="linkNav2">
+                <div>
+                    <a href="../index.html" class="linklogin"><img src="../imagem/seta.png" alt="" class="imagemLink">Login</a>
+                </div>
+
+            </div>  
+        </nav>
+        <header>
+            <div class="textHeader">            
+                <h2>Conta do Nubank</h2>
+                <p>Você no controle: receba, movimente e guarde seu dinheiro de um jeito simples.</p>
+                <p>Tenha N Possibilidades de produtos para N Possibilidades na vida. O que você precisa pra ficar no controle da sua vida financeira tem no app do Nubank.</p>            
+            </div>
+
+            <div class="imagheader"></div>
+        </header>
+
+        <main>
+            <form action="cad_pro.php" method="POST">
+
+                <h1>Cadastro para abertura de conta</h1><br>
+
+                <fieldset id="dados">        
+                    <!-- "fieldset" agrupa informações obrigatorias -->
+           
+                       <legend class="dadosT">Dados pessoais</legend>
+
+                       <label for="nome">Nome:*</label>
+                       <input type="text" name="nome" id="nome" class="dados" required><br><br>
+
+                       <label for="sobrenome">Sobrenome:*</label>
+                       <input type="text" name="sobrenome" id="sobrenome" class="dados" required><br><br>
+
+                       <label for="cpf">CPF:*</label>
+                       <input type="text" name="cpf" id="cpf" class="dados" placeholder="xxx.xxx.xxx-xx" required><br><br>
+
+                       <label for="datanascimento">Data de Nascimento:*</label>
+                       <input type="date" name="datanascimento" id="datanascimento" class="dados" required><br><br>
+
+                       <label for="telefone">Telefone:*</label>
+                       <input type="tel" name="telefone" id="telefone" class="dados" placeholder="(xx) xxxxx-xxxx" required>
+                       
+                </fieldset>  
+                
+                <fieldset id="endereco">
+                    <legend class="endT">Endereço para correspondênias</legend>
+                    
+                        <label for="cep">CEP:*</label>
+                        <input type="text" name="cep" class="dadosEnd"  id="cep" value="" placeholder="xxxxx-xxx" required><br> 
+                      
+                        <label for="logradouro">Logradouro:*</label>
+                        <input  type="text" name="logradouro" id="logradouro" class="dadosEnd value="" maxlength="75" required><br>
+                                            
+                        <label for="bairro">Bairro:*</label>
+                        <input  type="text" name="bairro" id="bairro" class="dadosEnd value="" required><br>
+                                          
+                        <label for="cidade">Cidade:*</label>
+                        <input  type="text" name="cidade" id="cidade" class="dadosEnd value="" required><br>                  
+                        <label for="uf">U.F:*</label>
+                        <input  type="text" name="uf" id="uf" class="dadosEnd  value="" placeholder="UF" required><br> 
+                        
+                </fieldset>
+                
+                <fieldset id="outrosDados">
+                    <legend class="outrosD">Outros dados:</legend>
+                    <label for="estadocivil">Estado Civil:</label>
+                        <select name="estadocivil" class="outrosDselect">
+                        <option value="Solteiro(a)">Solteiro(a)</option>
+                        <option value="Desquitado">Desquitado</option>
+                        <option value="Viuvo(a)">Viuvo(a)</option>
+                        <option value="Divorciado(a)">Divorciado(a)</option>
+                        <option value="Casado(a) com brasileiro(a) nato(a)">Casado(a) com brasileiro(a) nato(a)</option>
+                        <option value="Casado(a) com brasileiro(a) naturalizado(a)">Casado(a) com brasileiro(a) naturalizado(a)</option>
+                        <option value="Casado(a) com estrangeiro(a)">Casado(a) com estrangeiro(a)</option>
+                        <option value="União estável">União estável</option>
+                        </select><br><br>
+
+                        <label for="escolaridade">Escolaridade:</label>
+                        <select name="escolaridade" class="outrosDselect">
+                        <option value="Fundamental incompleto">Fundamental incompleto</option>
+                        <option value="Fundamental completo">Fundamental completo</option>
+                        <option value="Ensino medio incompleto">Ensino médio incompleto</option>
+                        <option value="Ensino medio completo">Ensino médio completo</option>
+                        <option value="Ensino Superior incompleto">Ensino Superior incompleto</option>
+                        <option value="Ensino Superior completo">Ensino Superior completo</option>
+                        </select><br><br>
+
+                        <label for="salario">Salário:</label>
+                        <select name="salario" class="outrosDselect">
+                        <option value="op1">De R$1.500,00 até R$2.500,00</option>
+                        <option value="op2">De R$2.501,00 até R$3.500,00</option>
+                        <option value="op3">De R$3.501,00 até R$4.500,00</option>
+                        <option value="op4">Acima de R$5.000,00</option>
+                        </select><br><br>
+                        
+                        <label for="sexo">Sexo:</label>
+                        <select name="sexo" class="outrosDselect">
+                        <option value="op1">Homem</option>
+                        <option value="op2">Mulher</option>
+                        <option value="op3">Não informar</option>                        
+                        </select><br><br>
+
+                        <label for="planoS">Possui plano de saúde?</label>                        
+                        <input type="radio" name="planoS" class="outrosDselect" value="yes"> Sim
+                        <input type="radio" name="planoS" class="outrosDselect" value="no"> Não 
+                                            
+
+                </fieldset>
+                
+                <fieldset id="dadosAcesso">
+                    <legend class="dadosA">Dados Acesso:</legend>
+                    <label for="email">Email:*</label>
+                    <input type="email" name="email" id="email" class="inpDadoAcesso" placeholder="exemplo@gmail.com" required><br><br>
+        
+                    <label for="senha">Senha:*</label>
+                    <input type="password" id="senha" class="inpDadoAcesso" required><br><br>
+                                    
+           
+                    <input type="checkbox" name="declaration" class="inpDadoAcesso" required value="declaration"><label for="">*Declaro que li e concordo com os termos e condições de uso.</label>
+                  <a href="../pdf/Contrato da Conta do Nubank.pdf" download="contratoNubank" type="aplication/pdf" id="download" >Dowlond_Contrato_Nubak</a><br>
+                  
+                </fieldset>
+                
+              
+                    <div id="buttons">
+
+                        <div id="buttons1">
+                            <div>
+                                <button type="submit" class="buttons">FINALIZAR CADASTRO</button><br>
+                            </div>
+                            <div>
+                                <button type="reset" class="buttons" >RESETAR</button><br>
+                            </div>
+                        </div>
+                    
+
+                        <div id="buttons2">
+                                <a href="../index.html" class="buttons2" id="voltar"><img src="../imagem/voltar.png" alt="" id="imgVoltar">Voltar</a> 
+                        </div>
+
+                    </div>                 
+                                
+            </form>      
+    
+        </main>
+        <footer>
+            <h5>Todos os direitos reservados ao Dev@</h5>
+        </footer>
+
+    </div>
+    
+</body>
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"> </script>
+
+<script>
+    jQuery(function($){
+        $("#cpf").mask("999.999.999-99");
+        $("#telefone").mask("(99)99999-9999");
+        $("#cep").mask("99999-999");
+      }
+        )
+</script> 
+  
+</html>
