@@ -123,13 +123,13 @@ legend{
 }
 
 #cpf{
-    width: 45%;
+    width: 120px;
     height: 20px;   
     border-radius: 3px; 
 }
 
 #senha{
-    width: 30%;
+    width: 120px;
     height: 20px;   
     border-radius: 3px;    
 }
