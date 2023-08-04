@@ -4,70 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="index.css">    
-
-    
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
 </head>
 <body>
-    <div id="pagina">
-        <nav></nav>
+    <div class="container-fluid m-0 p-0 ">
         <header>
-            <div id="logo"></div>
-        </header>    
-        
-        <main>              
-                <form action="login.php" method="POST">
-                    <fieldset>
-                        <legend>Login</legend>
-                        <div id="loginControl">
-                            <div class="control">
-                                <label for="cpf">CPF:</label><br>                                
-                                <input type="text" id="cpf" required placeholder="999.999.999-99"><br>
-                                <small>Nunca compartilharemos seu dados.</small>
-                            </div>                         
-                            
-                            <div class="control">
-                                <label for="senha">Senha:</label><br>
-                                <input type="password" name="senha" id="senha" placeholder="Digite sua senha"  required><br>                       
-                            </div>
+            <nav class="navbar navbar-expand-sm py-3">
+                <!-- Lado Esquerdo nav -->
+                <div class="container">
+                    <ul class="navbar-nav">                    
+                        <li class="navbar-item"><img src="imagem/nubank.svg" alt="" width="80px"></li>
+                        <li class="navbar-item"><a href="#" class="nav-link text-warning">Página Inicial</a></li>
+                        <li class="navbar-item"><a href="#" class="nav-link text-dark">Para Você</a></li>
+                        <li class="navbar-item"><a href="#" class="nav-link text-dark">Para o seu negócio</a></li>
+                        <li class="navbar-item"><a href="#" class="nav-link text-dark">O Nubank</a></li>                                      
+                        <li class="navbar-item"><a href="#" class="nav-link text-dark">Perguntas</a></li>                                      
+                    </ul>
+                    <!-- Lado Direito nav-->
+                    <ul class="navbar-nav">
+                        <li class="navbar-item"><button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#popUpMensagem"><a href="login/index.html">Abra a sua conta</a></button></li>                    
+                    </ul>
+                </div>  
+            </nav>
+        </header>
+        <main>
+            <div class="carousel slide m-2" id="demo" data-bs-ride="carousel">
+                    <!-- SLIDER -->
+                <div class="carouseli-inner" style="height: 600px; overflow: hidden;">
+                    <div class="carousel-item active">
+                        <img src="imagensHome/austin-distel-744oGeqpxPQ-unsplash.jpg" alt="" width="100%">
+                        
 
-                            <div class="control">
-                                <a href="esqueciSenha/esq.html" id="esqueciSenha">Esqueceu sua senha?</a>                                
-                            </div>
-                            
-                            <div id="manter">
-                                <input type="checkbox" name="" id="checar" checked>
-                                <label for="checar">Manter-me conectado</label>
-                            </div>
+                    </div>
 
-                        </div>
+                </div>    
+            </div>
 
-                        <div id="controlButlink">
-
-                            <a href="cadastro/cad.html" id="cadastro">Cadastre-se!!!</a>
-
-                            <button type="submit" name="submit" id="submit">Logar</button>
-
-                        </div> 
-                    </fieldset>                   
-
-                </form>                           
         </main>
-        <footer>
-            <h5>Todos os direitos reservados ao Dev@</h5>
-        </footer>
-
+        <footer></footer>
     </div>
-    
-</body>
-<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"> </script>    
-    <script>
-        jQuery(function($){
-            $("#cpf").mask("999.999.999-99");                
-         }
-            )
-    </script>
+
+
+
+
+
+
+  <script src="scripts/bootstrap.bundle.js"></script>  
+  <script src="scripts/bootstrap.bundle.min.js"></script>
+</body>
 </html>
