@@ -169,6 +169,13 @@ legend{
     color: white;
 }
 
+#imgVoltar{
+    width: 30px;
+    height: auto;
+    background-color: rgb(236, 119, 9);
+    border-radius: 100%;
+}
+
 #submit{
     border: 2px solid rgb(216, 212, 211);
     border-radius: 5px;
