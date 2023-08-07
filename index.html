@@ -10,12 +10,12 @@
 </head>
 <body>
     <div class="container-fluid m-0 p-0 ">
-        <header>
+        <header class="fixed-top bg-white">
             <nav class="navbar navbar-expand-sm py-3">
                 <!-- Lado Esquerdo nav -->
                 <div class="container">
                     <ul class="navbar-nav gap-5">                    
-                        <li class="navbar-item"><img src="imagem/nubank.svg" alt="" width="80px"></li>
+                        <li class="navbar-item"><img src="imagensHome/nubank.svg" alt="" width="80px"></li>
                         <li class="navbar-item"><a href="#" class="nav-link text-warning">Página Inicial</a></li>
                         <li class="navbar-item"><a href="#" class="nav-link text-dark">Para Você</a></li>
                         <li class="navbar-item"><a href="#" class="nav-link text-dark">Para o seu negócio</a></li>
@@ -28,6 +28,9 @@
                     </ul>
                 </div>  
             </nav>
+                
+        </header>
+        <main>
             <!-- MODAL -->
             <div class="modal" id="popUpMensagem">
                 <div class="modal-dialog">
@@ -55,11 +58,10 @@
                         </div>
                     </div>
                 </div>
-            </div>     
-        </header>
-        <main>
+            </div> 
+
              <!-- CARROSEL -->
-            <div class="carousel slide my-2" id="demo" data-bs-ride="carousel">
+            <div class="carousel slide" id="demo" data-bs-ride="carousel">
                 <!-- SLIDER -->
                 <div class="carousel-inner" style="height: 700px; overflow: hidden;">
                     <!--overflow: hidden; tudo que estourar esconde  -->
@@ -116,74 +118,74 @@
                     </div>
                 </div>
             </div>
-            <div class="container my-3">
+            <!-- CARDS -->
+            <div class="container my-5">
                 <div class="row">
-                    <div class="col-md-3">
-                        <div class="card">
+                    <div class="col-3">
+                        <div class="card" style="height: 100%;">
                             <img src="imagensHome/dinheiro.png" alt="" width="60px">
                             <div class="card-body text-center">
                                 <h1 class="card-title">Emprestimos</h1>
-                                <p class="card-text">Transparentes, seguros e do seu jeito. Opções de empréstimos que deixam você no controle do início ao fim.</p>
-                                <button type="button" class="btn btn-outline-info"><a href="cadastro/cad.html">Saiba mais</a></button>
+                                <p class="card-text" style="text-align:left;">Transparentes, seguros e do seu jeito. Opções de empréstimos que deixam você no controle do início ao fim.</p>
+                                <div class="d-flex" style="height: 45%; display: flex; align-items: end;">
+                                    <button type="button" class="btn btn-outline-info"><a href="cadastro/cad.html">Saiba mais <img src="imagensHome/seta.svg" alt="" width="20px"></a></button>
+                                </div>                                
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img src="imagensHome/dinheiro.png" alt="" width="60px">
+                    <div class="col-3">
+                        <div class="card" style="height: 100%;">
+                            <img src="imagensHome/dinheiro3.png" alt="" width="60px">
                             <div class="card-body text-center">
                                 <h1 class="card-title">NuConsignado</h1>
-                                <p class="card-text">O empréstimo consignado para servidores públicos federais e, em breve, para aposentados e pensionistas do INSS.</p>
-                                <button type="button" class="btn btn-outline-info"><a href="cadastro/cad.html">Saiba mais <img src="imagensHome/seta.svg" alt="" width="20px"></a></button>
+                                <p class="card-text" style="text-align:left;">O empréstimo consignado para servidores públicos federais e, em breve, para aposentados e pensionistas do INSS.</p>
+                                <div class="d-flex" style="height: 35%; display: flex; align-items: end;">
+                                    <button type="button" class="btn btn-outline-info"><a href="cadastro/cad.html">Saiba mais <img src="imagensHome/seta.svg" alt="" width="20px"></a></button>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card text-align">
-                            <img src="imagensHome/bolsa-de-dinheiro.png" alt="" width="60px">
+                    <div class="col-3">
+                        <div class="card text-align" style="height: 100%;">
+                            <img src="imagensHome/dinheiro2.png" alt="" width="60px">
                             <div class="card-body">
                                 <h1 class="card-title">Investimentos</h1>
-                                <p class="card-text">Investimentos a partir de R$ 1 e opções para todos os perfis. Uma experiência fácil, segura e transparente.</p>
-                                <button type="button" class="btn btn-outline-info"><a href="cadastro/cad.html">Saiba mais <img src="imagensHome/seta.svg" alt="" width="20px"></a></button>
+                                <p class="card-text" style="text-align:left;">Investimentos a partir de R$ 1 e opções para todos os perfis. Uma experiência fácil, segura e transparente.</p>
+                                <div class="d-flex" style="height: 35%; display: flex; align-items: end;">
+                                    <button type="button" class="btn btn-outline-info"><a href="cadastro/cad.html">Saiba mais <img src="imagensHome/seta.svg" alt="" width="20px"></a></button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card text-align">
-                            <img src="imagensHome/bolsa-de-dinheiro.png" alt="" width="60px">
-                            <div class="card-body">
-                                <h1 class="card-title">Caixinhas</h1>
-                                <p class="card-text">Organize e guarde dinheiro para seus planos. Crie Caixinhas personalizadas para cada um de seus objetivos.</p>
-                                <button type="button" class="btn btn-outline-info"><a href="cadastro/cad.html">Saiba mais <img src="imagensHome/seta.svg" alt="" width="20px"></a></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card text-align">
-                            <img src="imagensHome/bolsa-de-dinheiro.png" alt="" width="60px">
+                    
+                    <div class="col-3">
+                        <div class="card text-align" style="height: 100%;">
+                            <img src="imagensHome/cartao-de-credito.png" alt="" width="60px">
                             <div class="card-body">
                                 <h1 class="card-title">Cartão de crédito</h1>
-                                <p class="card-text">Um cartão completo, moderno e gratuito pra você. E com anuidade zero. Fique no controle da sua vida financeira.</p>
-                                <button type="button" class="btn btn-outline-info"><a href="cadastro/cad.html">Saiba mais <img src="imagensHome/seta.svg" alt="" width="20px"></a></button>
+                                <p class="card-text" style="text-align:left;">Um cartão completo, moderno e gratuito pra você. E com anuidade zero. Fique no controle da sua vida financeira.</p>
+                                <div class="d-flex" style="height: 15%; display: flex; align-items: end;">
+                                    <button type="button" class="btn btn-outline-info"><a href="cadastro/cad.html">Saiba mais <img src="imagensHome/seta.svg" alt="" width="20px"></a></button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-
-                   
-                    
+                    </div>                    
                 </div>
-
-
             </div>
-               
-
-
 
         </main>
         <footer>
-            <div class="container-fluid bg-info py-3 d-flex justify-content-center">
-                <p>teste footer</p>
+            <div class="container-fluid bg-dark text-white py-3 d-flex justify-content-center">
+                <nav class="navbar navbar-expand-sm py-3">
+                    <!-- Lado Esquerdo nav -->
+                    <div class="container">
+                        <ul class="navbar-nav gap-5">                    
+                            <li class="navbar-item"><img src="imagensHome/nubank - 2.svg" alt="" width="80px"></li>
+                            <li class="navbar-item"><a href="#" class="nav-link text-warning">© 2023 Nu Pagamentos S.A - Instituição de Pagamento. 18.236.120/0001-58
+                                Rua Capote Valente, 39 - São Paulo, SP - 05409-000</a></li>                                                                 
+                        </ul>                          
+                </nav>                
             </div>
         </footer>
     </div>
