@@ -67,7 +67,7 @@ header{
 #logo{
     width: 150px;
     height: 150px;
-    background-image: url(imagem/logo-nubank-2.png);
+    background-image: url(../imagem/logo-nubank-2.png);
     background-repeat: no-repeat;
     background-size: cover;
     animation: Anime 4s 1;

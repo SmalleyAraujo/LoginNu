@@ -166,7 +166,7 @@
                     
 
                         <div id="buttons2">
-                                <a href="../index.html" class="buttons2" id="voltar"><img src="../imagem/voltar.png" alt="" id="imgVoltar">Voltar</a> 
+                                <a href="../login/login.html" class="buttons2" id="voltar"><img src="../imagem/voltar.png" alt="" id="imgVoltar">Voltar</a> 
                         </div>
 
                     </div>                 
@@ -179,20 +179,22 @@
         </footer>
 
     </div>
-    
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"> </script>
+
+    <script>
+        jQuery(function($){
+            $("#cpf").mask("999.999.999-99");
+            $("#telefone").mask("(99)99999-9999");
+            $("#cep").mask("99999-999");
+        }
+            )
+    </script>
+
 </body>
 
-<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-        
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"> </script>
 
-<script>
-    jQuery(function($){
-        $("#cpf").mask("999.999.999-99");
-        $("#telefone").mask("(99)99999-9999");
-        $("#cep").mask("99999-999");
-      }
-        )
-</script> 
   
 </html>
