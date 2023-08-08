@@ -1,38 +1,14 @@
 @keyframes Anime {
-    0%{  
-        margin-left: 1%;
-        width: 160px;   
-        height: 150px;        
-    } 
-    70%{
-        margin-left: 15%;
-        width: 800px;   
-        height: 790px; 
-        background-color: rgba(247, 22, 255,0.8);
-        border-radius: 20px; 
-        box-shadow: 1px 5px 100px 50px rgb(187, 182, 182);        
-        /* rgba(247, 22, 255,0.7);  */
-    }  
-
-    80%{
-        margin-right: 500px;
-        background-color: rgba(22, 162, 255, 0.8);
-        border-radius: 100px;   
+    from {
+        margin-left: 90%;
+        
+      }
+    
+      to {
+        margin-left: 0%;
+        
+      }
     }
-
-    90%{
-        margin-right: 500px;
-        background-color: rgba(22, 162, 255, 0.8);
-        border-radius: 100px;
-    }
-
-    100%{
-        margin-right: 500px;
-        background-color: rgba(22, 162, 255, 0.8);
-        border-radius: 100px;
-    }       
-
-}
 
 /* @keyframes Animação */
 
@@ -65,12 +41,13 @@ header{
 }
 
 #logo{
-    width: 150px;
-    height: 150px;
-    background-image: url(../imagem/logo-nubank-2.png);
+    width: 380px;
+    height: 200px;       
+    background-image: url(../imagensHome/sorriso2.png);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    animation: Anime 4s 1;
+    animation: Anime 3s 1;
 }
 /* FIM HEADER */
 /*  */
